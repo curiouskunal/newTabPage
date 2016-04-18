@@ -10,6 +10,8 @@
     font: 10px/1.5 Verdana, Helvetica, sans-serif;
     float: left;
     text-align: center;
+    width: 20%;
+    margin:  2% 2% 50px 2%;
 }
 
 .galleryItem h3 {
@@ -20,18 +22,11 @@
     max-width: 100%;
 }
 
-.galleryItem:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.galleryItem img:hover{
+    margin:-1px;
     border:1px solid dimgrey;
-}
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-.galleryItem {
-    color: #797478;
-    font: 10px/1.5 Verdana, Helvetica, sans-serif;
-    float: left;
-
-    width: 20%;
-    margin:  2% 2% 50px 2%;
 }
 
 

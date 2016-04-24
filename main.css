@@ -14,11 +14,11 @@ body{
 }
 
 .container {
-    width: 80%;
+    width: 60%;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 h3 {
@@ -29,20 +29,29 @@ h3 {
     font: 10px/1.5 Verdana, Helvetica, sans-serif;
     float: left;
     text-align: center;
-    width: 20%;
+    width: 16%;
     margin:  2% 2% 2% 2%;
 }
 
 .galleryItem img {
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 3px;
+    /*margin:-1px;*/
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+    transition-property: box-shadow;
+    transition-property: border;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
 }
 
 .galleryItem img:hover{
-    margin:-1px;
-    border:1px solid dimgrey;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    /*border:1px solid dimgrey;*/
+    /*border-radius: 3px;*/
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.24);
+
 }
 
 /* MEDIA QUERIES*/
@@ -54,11 +63,13 @@ only screen and (max-device-width : 940px){
 @media only screen and (max-width : 720px),
 only screen and (max-device-width : 720px){
     .galleryItem {width: 29.33333%;}
+    .container {width: 70%;}
 }
 
 @media only screen and (max-width : 530px),
 only screen and (max-device-width : 530px){
     .galleryItem {width: 46%;}
+    .container {width: 80%;}
 }
 
 @media only screen and (max-width : 320px),
@@ -66,4 +77,5 @@ only screen and (max-device-width : 320px){
     .galleryItem {width: 96%;}
     .galleryItem img {width: 96%;}
     .galleryItem h3 {font-size: 18px;}
+    .container {width: 90%;}
 }
